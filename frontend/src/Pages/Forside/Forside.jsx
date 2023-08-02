@@ -1,31 +1,15 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react'
+import './Forside.scss'
 
-const Forside = ({card}) => {
+export default function Forside() {
   return (
-  
-    <div className="cardInfo">
-    <Link to={`/one/${card.id}`}> 
-        <img src={card.image} alt="" /></Link>
-        <div className="info">
-            <div className="user">
-              <p>{card.title}</p> 
-              <span>{card.disc}</span>
-              <button>{card.button}</button>
-            </div>
-                   
-        </div>
-      
-        <div className="detail">
-            
-            <div className="price">
-              <h2>DKK{card.price}</h2>
-            </div>
-        </div>
-        </div>
+    <>
+     <div className='Header-img'>
    
+   </div>
+   
+    <div>Forside</div>
+    </>
   )
 }
 
-
-export default Forside;

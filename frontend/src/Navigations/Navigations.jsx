@@ -10,8 +10,8 @@ const Navigations = () => {
         <Link to="/"><span>FORSIDE</span></Link>
         <Link to="/event"><span>EVENT</span></Link>
         <Link to="/camps"><span>CAMPS</span></Link>
-        <Link to="/billettes"><span>BILLETTER</span></Link>
-        <Link to="/prakriskinfo"><span>PRAKTISK INFO</span></Link>
+        <Link to="/billetter"><span>BILLETTER</span></Link>
+        <Link to="/prakriskinfo"><span>PRAKTISKINFO</span></Link>
         <Link to="/login"><span>LOGIN</span></Link>
     </nav>
 </header>
