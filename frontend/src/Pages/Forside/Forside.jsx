@@ -1,15 +1,38 @@
-import React from 'react'
-import './Forside.scss'
+import React,{ useEffect, useState } from 'react'
+import './Forside.scss';
+import axios from 'axios';
 
-export default function Forside() {
+
+const Forside = () => { 
+  const [data, setData] = useState([]);
+
+  useEffect(()=>{
+    const fetchData = async () =>{
+      const result = await axios.get('http://localhost:4000/games');
+      setData(result.data);
+    }
+
+    fetchData();
+  }, []);
+
   return (
-    <>
-     <div className='Header-img'>
-   
-   </div>
-   
-    <div>Forside</div>
-    </>
-  )
+  <div className='global-body-color'>
+    <div className="gigs">
+      <div className="container">
+        <div className="cards">
+        {/* {
+          data.map((item) => (
+            <ProductCard key={item.id} item={item} />
+          ))
+} */}
+
+        </div>
+      </div>
+    </div>
+    </div>
+  );
 }
+
+export default Forside;
+   
 
