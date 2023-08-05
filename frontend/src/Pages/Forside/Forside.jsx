@@ -1,30 +1,39 @@
 import React,{ useEffect, useState } from 'react'
-import './Forside.scss';
-import axios from 'axios';
+import { useQuery } from 'react-query';
+import { createRoot } from 'react-dom/client';
 
+import './Forside.scss';
+import newRequest from '../../utils/newRequest'
+import ProductCard from '../../Components/ProductCard/ProductCard';
 
 const Forside = () => { 
-  const [data, setData] = useState([]);
+  const [open, setOpen] = useState(false);
 
-  useEffect(()=>{
-    const fetchData = async () =>{
-      const result = await axios.get('http://localhost:4000/games');
-      setData(result.data);
-    }
+  const { isLoading, error, data } = useQuery(["nyheder"], () => {
+    let url = '/nyheder/nyheder'; 
+    return newRequest.get(url).then((res) => res.data);
+}, {
+    keepPreviousData: true,
+});
+console.log(data);
 
-    fetchData();
-  }, []);
+
+  if (isLoading) return <p>Loading...</p>;
+  if (error) return <p>Error: {error.message}</p>;
 
   return (
   <div className='global-body-color'>
     <div className="gigs">
       <div className="container">
         <div className="cards">
-        {/* {
-          data.map((item) => (
+          
+        {
+          Array.isArray(data.items) && data.items.map((item) => (
             <ProductCard key={item.id} item={item} />
           ))
-} */}
+        }
+
+
 
         </div>
       </div>

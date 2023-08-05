@@ -1,6 +1,9 @@
 footer {
  
-  background-image: url('../../../Assets/Images/welcome_pic.jpg');
+  margin-bottom: 0;
+  padding-bottom: 0;
+  position: sticky;
+  background-image: linear-gradient((rgb(0, 0, 0,0.75),rgb(0, 0, 0, 0.75))), url('../../../Assets/Images/welcome_pic.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -11,15 +14,17 @@ footer {
   text-align: center;
 
   h1 {
-    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
     margin-bottom: 10px;
-    color: #333;
+    color: #f0ebeb;
   }
 
   p {
-    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
     margin-bottom: 20px;
-    color: #555;
+    color: #f5ecec;
   }
 
   .registration-form {
