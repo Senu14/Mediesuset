@@ -5,6 +5,7 @@ exports.getnyhederList = async (req, res) => {
     try {
         const response = await axios.get('https://api.mediehuset.net/mediesuset/news');
         res.json(response.data);
+        
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'An error occurred while trying to fetch the news list.' });

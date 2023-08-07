@@ -2,7 +2,7 @@ const express = require('express');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const routes = require('./routes/index');
-const connectDB = require('./config/db');
+// const connectDB = require('./config/db');
 
 const app = express();
 app.use(express.json());
@@ -15,9 +15,9 @@ app.use(cors({
     allowedHeaders: ['Content-Type', 'Authorization']
 }));
 
-connectDB();
+// connectDB();
 
 app.use('/', routes);
 
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => console.log(`Server is running on port ${port}...`));
