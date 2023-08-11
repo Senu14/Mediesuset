@@ -7,4 +7,4 @@ router.get('/programme/:id', programmeController.getProgrammeById);
 router.post('/programme', programmeController.createProgramme);
 router.delete('/programme/:id', programmeController.deleteProgramme);
 
-module.exports = router;
+module.exports =router;
