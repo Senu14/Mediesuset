@@ -1,13 +1,14 @@
-// Importing similar required modules as aboveimport React,{ useEffect, useState } from 'react'
+// Importing similar required modules as above
+import React,{ useState } from 'react'
 import { useQuery } from 'react-query';
-import { createRoot } from 'react-dom/client';
+// import { createRoot } from 'react-dom/client';
 import newRequest from '../../utils/newRequest'
 import EventCard from '../../Components/eventSCard/EventCard'; // Importing a reusable event card component
 import './event.scss'// Importing SCSS file for styling
 
 const Event = () => {
   // Similar state and query handling as in the Forside component
-  const [open, setOpen] = useState(false);
+  // const [open, setOpen] = useState(false);
 
   const { isLoading, error, data } = useQuery(["events"], () => {
     let url = '/events/';  // Endpoint to fetch events

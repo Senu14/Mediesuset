@@ -1,9 +1,9 @@
-// Importing essential librariesconst express = require('express');
+// Importing essential libraries
+const express = require('express'); // Express to handle routing and middleware
 const cookieParser = require('cookie-parser');// For parsing cookies from HTTP requests
 const cors = require('cors');// Enabling Cross-Origin Resource Sharing (CORS)
 const routes = require('./routes/index'); // Importing all the defined routes
 // const connectDB = require('./config/db'); // Database connection configuration
-
 
 // Initializing an Express application
 const app = express();

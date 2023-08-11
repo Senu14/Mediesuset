@@ -1,4 +1,5 @@
 // Importing Express and initializing a routerconst express = require("express");
+const express = require("express");
 const router = express.Router();
 
 // Importing individual route files for different parts of the application
