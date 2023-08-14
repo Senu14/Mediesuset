@@ -1,16 +1,21 @@
 
-// .Header-img {
-//      background-image: url('../../Assets/Images/pexels-luis-quintero-2257474.jpg');
-//      background-repeat: no-repeat;
-//      background-position: center;
-//      background-size: cover;
-//      padding: 13%;
-//      display: flex;
-//      flex-direction: column;
-//      align-items: center;
-//      text-align: center;
-//      height: 50%;
-// }
+.Header-img {
+     background-image: url('../../Assets/Images/pexels-luis-quintero-2257474.jpg');
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     padding: 13%;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     text-align: center;
+     height: 50%;
+}
+.sub-title {
+     text-align: center;
+    
+
+}
 .cards{
      display: flex;
      justify-content: center;
