@@ -28,6 +28,7 @@ const Event = () => {
   return (
     <>
     <div className='Header-img'>
+      </div>
   
   
     <div className='event'>
@@ -36,7 +37,7 @@ const Event = () => {
             <EventCard key={item.id} item={item} />
           ))
         }
-  </div>
+  
   </div>
         
     </>
