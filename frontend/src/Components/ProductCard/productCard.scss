@@ -43,25 +43,9 @@
         color: #0077b5;
     }
       
-    button svg {
-        position: absolute;
-        top: 0.45em;
-        right: 0.5em;
-        margin: 0;
-        padding: 0;
-        opacity: 0;
-        transition: 0.5s;
-        height: 1em;
-        fill: #fff
-    }
-      
     button:hover p {
         left: 0.6em;
         color: #fff
-    }
-      
-    button:hover svg {
-        opacity: 1;
     }
       
     button:hover {

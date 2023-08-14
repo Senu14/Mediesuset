@@ -29,9 +29,11 @@ console.log(data);
   return (
     <>
   <div className='Header-img'></div>
+  <h1>NYHEDER</h1>
     <div className="gigs">
       <div className="container">
         <div className="cards">
+        
         {
           // (&&) "AND" operator. 
           //often used in control structures such as if statements, 
