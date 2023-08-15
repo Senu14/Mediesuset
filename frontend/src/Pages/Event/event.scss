@@ -1,6 +1,38 @@
 .event{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+}
+
+.topnav {
+    
+     overflow: hidden;
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-wrap: wrap;
-}
+   }
+   
+  
+   .topnav a {
+     background-color: #333;
+     float: left;
+     color: #f2f2f2;
+     text-align: center;
+     padding: 14px 16px;
+     text-decoration: none;
+     font-size: 17px;
+   }
+   
+   
+   .topnav a:hover {
+     background-color: red;
+     color: black;
+   }
+   
+
+//    .topnav a.active {
+//      background-color: #9c958e;
+//      color: black;
+//    }
+   

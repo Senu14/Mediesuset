@@ -9,6 +9,7 @@ exports.getAllEvents = async (req, res) => {
     }
 };
 
+
 exports.getEventDetail = async (req, res) => {
     try {
         const response = await axios.get(`https://api.mediehuset.net/mediesuset/events/${req.params.id}`);

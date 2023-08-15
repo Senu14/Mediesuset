@@ -1,5 +1,6 @@
 // Importing similar required modules as above
 import React,{ useState } from 'react'
+import { Link } from 'react-router-dom';
 import { useQuery } from 'react-query';
 // import { createRoot } from 'react-dom/client';
 import newRequest from '../../utils/newRequest'
@@ -29,14 +30,26 @@ const Event = () => {
     <>
     <div className='Header-img'>
       </div>
-  
-  
+      <h1>LINE UP</h1>
+
+
+      <div className="topnav">
+  <a className="active" href="#A-Å">A-Å</a>
+  <a className="pasive" href="#RØD SCENE">RØD SCENE</a>
+  <a className="blue" href="#BLÅ SCENE">BLÅ SCENE</a>
+  <a className="green" href="#GRØN SCENE">GRØN SCENE</a>
+  <a className="lilla" href="#LILLA SCENE">LILLA SCENE</a>
+</div>
+
+
     <div className='event'>
-              {
+              {  
            data.items.map((item) => (
             <EventCard key={item.id} item={item} />
           ))
+         
         }
+       
   
   </div>
         
